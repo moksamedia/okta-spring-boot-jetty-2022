@@ -1,4 +1,4 @@
-package com.okta.jettyembedded;
+package com.demo;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;

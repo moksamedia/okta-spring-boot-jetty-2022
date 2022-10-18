@@ -17,13 +17,13 @@ public class WebController {
             "Teton Crest Trail", "Everest Base Camp via Cho La Pass", "Kesugi Ridge"
     ));
 
-    @GetMapping("")
+    @GetMapping()
     @ResponseBody
     public String indexGet() {
         return String.join("\n", this.hikes);
     }
 
-    @PostMapping("")
+    @PostMapping()
     @ResponseBody
     public String indexPost(@RequestParam String hike, HttpServletResponse response) {
         if (hike == null) {
@@ -40,7 +40,7 @@ public class WebController {
         }
     }
 
-    @DeleteMapping("")
+    @DeleteMapping()
     @ResponseBody
     public String indexDelete(@RequestParam String hike, HttpServletResponse response) {
         if (hike == null) {
